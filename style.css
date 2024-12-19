@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101025;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #17cedf;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px  rgb(225, 36, 68) ;
+  }
+  
+  #fileInput {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #101025;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid transparent; 
+    border-image: linear-gradient(to right,rgb(225, 36, 68),  #17cedf) 1;
+  }
+
+  #canvas {
+    margin: 1rem auto;
+    display: block;
+    border: 2px double #e1e1e1;
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    background-color: #101025;
+  }
+
+  .button-div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #cropButton {
+    background-color: rgb(225, 36, 68);
+    color: white;
+  }
+  
+  #cropButton:hover {
+    background:  rgb(249, 0, 41);  
+    box-shadow: 2px 3px  whitesmoke;
+    transform: translateY(-3px);
+  }
+  
+  #saveButton {
+    background-color: #17cedf;
+    color: white;
+  }
+  
+  #saveButton:hover {
+    background-color: #0056b3;
+    box-shadow: 2px 3px  whitesmoke;
+    transform: translateY(-3px);
+  }
+  .myname{
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.1;
+    color:white;
+    text-align: end;
+  }
+  
+  /* Add responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #canvas {
+      width: 95%;
+    }
+  
+    button {
+      width: 90%;
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+  }
+  
